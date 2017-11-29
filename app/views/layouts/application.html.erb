@@ -1,0 +1,21 @@
+<!--Layout -->
+
+<head>
+  <title>heatmap</title>
+  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "https://www.google.com/jsapi" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <!-- Ausgelagerter Header -->  
+  <%= render "layouts/header" %>
+  
+  <!-- dynamischer Inhalt --> 
+  <%= yield %> 
+  
+  <!-- Ausgelagerter Footer --> 
+  <%= render "layouts/footer" %>
+</body>
