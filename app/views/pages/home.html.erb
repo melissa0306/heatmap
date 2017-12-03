@@ -7,6 +7,7 @@
 
   <body>
         
+        <!-- Panel -->
         <div style="float:left; margin-left:150px; width:50%">   
         <div id="floating-panel">
           <button onclick="toggleHeatmap()">Heatmap anzeigen</button>
@@ -14,11 +15,13 @@
           <button onclick="changeRadius()">Radius ändern</button>
           <button onclick="changeOpacity()">Deckkraft ändern</button>
         </div>
-             
-            <div id="map" style="width: 1000px; height: 800px"></div>
+            
+        <!-- Render map -->  
+        <div id="map" style="width: 1000px; height: 800px"></div>
             <script javascript_include_tag "heatmap", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2RJhC6gIpQppogZwagaVhBV58APRGGjk&libraries=visualization&callback=initMap"></script>
         </div>
         
+        <!-- Textfield --> 
         <div style="float:right; margin-right:50px; margin-top: 100; width:35%"> 
             <h1>Heatmap zu den Buchungszahlen der Car-Sharing Stationen in Göttingen</h1>
             <p> Folgende Karte bietet eine Übersicht über die Verteilung der Buchungszahlen

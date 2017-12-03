@@ -1,5 +1,6 @@
 var map, heatmap;
     
+    // Initialize function
     function initMap() {
       var bounds = new google.maps.LatLngBounds();
       var mapOptions = {
@@ -8,6 +9,7 @@ var map, heatmap;
         mapTypeId: 'satellite'
       };
       
+      // Add heatmaplayer 
       heatmap = new google.maps.visualization.HeatmapLayer({
         data: getPoints(),
         map: map
@@ -120,6 +122,7 @@ var map, heatmap;
     
     }
 
+    // heatmapfunctions
     function toggleHeatmap() {
       heatmap.setMap(map);
     }
